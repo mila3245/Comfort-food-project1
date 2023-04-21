@@ -26,3 +26,27 @@
   .card {
     margin: 0 auto;
   }
+   /* STYLES FOR THE CARDS PLEASE DO NOT TOUCH*/
+/* Float four columns side by side */
+.column {
+  float: right !important;
+  width: 5%;
+  padding: 0 10px;
+}
+
+/* Style the counter cards */
+.card {
+  display: flex !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center !important;
+    background-color: #f1f1f1;
+}
+  
+  .card-row {
+    display: flex !important;
+    flex-direction: row!important;
+    justify-content: stretch!important;
+    position: left !important;
+    width: 90% !important;
+   
