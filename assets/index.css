@@ -24,8 +24,10 @@
     margin-top: 20px;
   }
   .card {
-    margin: 0 auto;
+    margin: 50 auto;
   }
+
+
    /* STYLES FOR THE CARDS PLEASE DO NOT TOUCH*/
 /* Float four columns side by side */
 .column {
@@ -37,10 +39,10 @@
 /* Style the counter cards */
 .card {
   display: flex !important;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(204, 240, 203, 0.808);
   padding: 16px;
   text-align: center !important;
-    background-color: #f1f1f1;
+    background-color: #bae0e1;
 }
   
   .card-row {
@@ -49,4 +51,21 @@
     justify-content: stretch!important;
     position: left !important;
     width: 90% !important;
-   
+    background-color: #1cb7bd !important;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }   
