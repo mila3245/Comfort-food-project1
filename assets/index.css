@@ -46,7 +46,7 @@ footer {
   padding: 16px;
   text-align: center !important;
   background-color: #bae0e1;
-
+  
 }
 
 .card-row {
@@ -56,8 +56,4 @@ footer {
   position: left !important;
   width: 90% !important;
   background-color: #1cb7bd !important;
-}
-.card title {
-  color: #4c1cbd !important;
-
 }
