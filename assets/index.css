@@ -3,12 +3,18 @@
   width: 8%;
   height: 8%
 }
-
+ /* jumbotron */
 .jumbotron{
-/* ll */
+background-image: url('./pictures/ella-olsson-KPDbRyFOTnE-unsplash.jpg');
+color: black;
+background-size: cover;
+background-repeat: no-repeat;
+height:calc(100vh-25px);
+display: block;
+align-items: center;
+justify-content: center
+
 };
-
-
 
 /* STYLES FOR TEMPLATE PLEASE DO NOT TOUCH*/
 .dropdown-menu {
