@@ -15,10 +15,10 @@
 }
  /* jumbotron */
 .jumbotron{
-background-image: url('./pictures/ella-olsson-KPDbRyFOTnE-unsplash.jpg');
+/*background-image: url('./pictures/ella-olsson-KPDbRyFOTnE-unsplash.jpg');
 color: black;
 background-size: cover;
-background-repeat: no-repeat;
+background-repeat: no-repeat;*/
 height:calc(100vh-25px);
 display: block;
 align-items: center;
