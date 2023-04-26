@@ -43,6 +43,10 @@ display: block;
 align-items: center;
 justify-content: center;
 }
+/*section 3 card*/
+.card {
+  background-color: #bae0e1;
+}
 
 /*hero*/
 header.masthead {
@@ -94,8 +98,10 @@ header.masthead .device-container .screen img {
 .column {
   float: right !important;
   width: 5%;
-  padding: 0 10px;
-}
+  padding: 0 30;
+  margin-right: 10px;
+  column-gap: 30px!important;
+}padding: 0 30;
 
 /*.footerbox {
   background-color: #e6d817;
