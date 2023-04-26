@@ -1,7 +1,7 @@
 /*Nav bar*/
 #logo {
-  width: 10%;
-  height: 10%;
+  width: 30%;
+  height: 30%;
 }
 
 .navbar {
@@ -10,7 +10,7 @@
   background-color: #e6d817 !important;
   transition: all 0.35s;
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
-  font-weight: 200;
+  font-weight: 900;
   letter-spacing: 1px;
 }
 .dropdown-item:hoover {
@@ -109,14 +109,14 @@ header.masthead .device-container .screen img {
 .column {
   float: right !important;
   width: 5%;
-  padding: 0 10px;
+  padding: 10 10px;
 }
 
 /* Style the counter cards */
 .card {
   display: flex !important;
   box-shadow: 0 4px 8px 0 rgba(204, 240, 203, 0.808);
-  padding: 16px;
+  padding: 50px;
   text-align: center !important;
   background-color: #e6d817;
   
