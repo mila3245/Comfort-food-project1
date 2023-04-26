@@ -1,7 +1,7 @@
 /*Nav bar*/
 #logo {
-  width: 30%;
-  height: 30%;
+  width: 20%;
+  height: 20%;
 }
 
 .navbar {
@@ -10,24 +10,16 @@
   background-color: #e6d817 !important;
   transition: all 0.35s;
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
-  font-weight: 900;
+  font-weight: 600;
   letter-spacing: 1px;
+}
+.dropdown-menu {
+  left: -97px;
 }
 .dropdown-item:hoover {
   background-color: rgba(0,0,0,0.3);
 }
- /* jumbotron */
-.jumbotron{
-/*background-image: url('./pictures/ella-olsson-KPDbRyFOTnE-unsplash.jpg');
-color: black;
-background-size: cover;
-background-repeat: no-repeat;*/
-background-color: #88ad95;
-height:calc(100vh-25px);
-display: block;
-align-items: center;
-justify-content: center;
-};
+ 
 .form-inline {
   display: flex;
   justify-content: center;
@@ -36,16 +28,9 @@ justify-content: center;
   width: 60%;
 }
 
-#j2 {
-  background-color: #f5f4ef;
-height:calc(100vh-25px);
-display: block;
-align-items: center;
-justify-content: center;
-}
 /*section 3 card*/
-.card {
-  background-color: #bae0e1;
+.col-md-6 {
+  background-color: #e6d817;
 }
 
 /*hero*/
@@ -89,10 +74,7 @@ header.masthead .device-container .screen img {
   position: relative;
   width: 60%;
 }
-/* STYLES FOR TEMPLATE PLEASE DO NOT TOUCH*/
-.dropdown-menu {
-  left: -97px;
-}
+
 /* STYLES FOR THE CARDS PLEASE DO NOT TOUCH*/
 /* Float four columns side by side */
 .column {
@@ -101,7 +83,8 @@ header.masthead .device-container .screen img {
   padding: 0 30;
   margin-right: 10px;
   column-gap: 30px!important;
-}padding: 0 30;
+  padding: 0 30;
+}
 
 /*.footerbox {
   background-color: #e6d817;
@@ -132,7 +115,7 @@ header.masthead .device-container .screen img {
   box-shadow: 0 4px 8px 0 rgba(204, 240, 203, 0.808);
   padding: 50px;
   text-align: center !important;
-  background-color: #bae0e1;
+  background-color: #e6d817;
   
 }
 
