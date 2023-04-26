@@ -22,11 +22,18 @@
 color: black;
 background-size: cover;
 background-repeat: no-repeat;*/
-background-color: #e6d817;
+background-color: #88ad95;
 height:calc(100vh-25px);
 display: block;
 align-items: center;
 justify-content: center;
+};
+.form-inline {
+  display: flex;
+  justify-content: center;
+}
+.form-control {
+  width: 60%;
 }
 
 #j2 {
@@ -36,6 +43,7 @@ display: block;
 align-items: center;
 justify-content: center;
 }
+
 /*hero*/
 header.masthead {
   position: relative;
@@ -118,7 +126,7 @@ header.masthead .device-container .screen img {
   box-shadow: 0 4px 8px 0 rgba(204, 240, 203, 0.808);
   padding: 50px;
   text-align: center !important;
-  background-color: #e6d817;
+  background-color: #bae0e1;
   
 }
 
@@ -128,6 +136,6 @@ header.masthead .device-container .screen img {
   justify-content: stretch !important;
   position: left !important;
   width: 90% !important;
-  background-color: #e8dc42 !important;
+  background-color: #1cb7bd !important;
 }
 
