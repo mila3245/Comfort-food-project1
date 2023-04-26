@@ -59,12 +59,17 @@
       <div class="col-lg-7 my-auto">
         <div class="header-content mx-auto">
           <h1 class="mb-5">Eat Good, Feel Good</h1>
-          <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Download for Free!</a>
+          <!--<a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Download for Free!</a> -->
+          <div id="searchbar">
+            <form class="form-inline my-2 my-lg-0">
+        <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button id="search-btn" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search </button>
+      </form>
+          </div>
         </div>
       </div>
       <div class="col-lg-5 my-auto">
         <div class="device-container">
-          <img src="assets/pictures/ella-olsson-KPDbRyFOTnE-unsplash.jpg" class="img-fluid" alt="">
         </div>
       </div>
     </div>
@@ -120,25 +125,45 @@
     <hr class="my-4">
   </div>
     <!-- jumbotron 2-->
-    <div class="jumbotron">
-      <h1 class="display-4">Hello, world!</h1>
-      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-      <hr class="my-4">
-      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-    </div>
-    <!--Footer-->
-    <footer>
-      <div class="footer">
-        <h3>About us</h3>
-        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum incidunt omnis numquam, modi excepturi quo? Reprehenderit, nobis sit. Fugit harum vero minus aliquam iusto accusantium rerum possimus hic. Ipsum, harum!"</p>
-        <h3>Contact us</h3>
-        <ul>
-          <li>Tel. 07841613450</li>
-          <li>E-mail: comfort@food.com</li>
-        </ul>
+    <div id="j2">
+      <div class="jumbotron">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
       </div>
-    </footer>
+    </div>
+<!--Footer-->
+   <div class="footerbox">
+    <section class="footer-section bg-black">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card py-4 h-100 ">
+              <div class="card-body text-center">
+                <i class="fas fa-envelope text-primary mb-2"></i>
+                <h4 class="text-uppercase m-0">Email</h4>
+                <hr class="my-4" />
+                <div class="small text-black-50"><a href="#!">comfort@food.com</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card py-4 h-100">
+              <div class="card-body text-center">
+                <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                <h4 class="text-uppercase m-0">Phone</h4>
+                <hr class="my-4" />
+                <div class="small text-black-50">07823695410 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   </div>
+   
           <!-- Optional JavaScript -->
           <!-- jQuery first, then Popper.js, then Bootstrap JS -->
           <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

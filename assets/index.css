@@ -22,21 +22,32 @@
 color: black;
 background-size: cover;
 background-repeat: no-repeat;*/
+background-color: #e6d817;
 height:calc(100vh-25px);
 display: block;
 align-items: center;
-justify-content: center
+justify-content: center;
+}
 
-};
-
+#j2 {
+  background-color: #f5f4ef;
+height:calc(100vh-25px);
+display: block;
+align-items: center;
+justify-content: center;
+}
 /*hero*/
 header.masthead {
   position: relative;
   width: 100%;
-  padding-top: 150px;
-  padding-bottom: 100px;
-  color: white;
-  background: url('../assets/pictures/ella-olsson-KPDbRyFOTnE-unsplash.jpg') !important;
+  height: 500px;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  color: black;
+  background: url('../assets/pictures/ella-olsson-KPDbRyFOTnE-unsplash.jpg');
+  background-size: 80%;
+  background-repeat: no-repeat;
+  object-fit: stretch;
 }
 
 header.masthead .header-content {
@@ -59,10 +70,38 @@ header.masthead .device-container .screen img {
   border-radius: 3px;
 }
 
+#searchbar {
+  position: relative;
+  width: 100%;
+  content: center;
+}
 /* STYLES FOR TEMPLATE PLEASE DO NOT TOUCH*/
 .dropdown-menu {
   left: -97px;
 }
+/* STYLES FOR THE CARDS PLEASE DO NOT TOUCH*/
+/* Float four columns side by side */
+.column {
+  float: right !important;
+  width: 5%;
+  padding: 0 10px;
+}
+
+/*.footerbox {
+  background-color: #e6d817;
+}*/
+.footercard {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #e6d817;
+  margin-top: 50px;
+  padding: 25px 0;
+  text-align: center;
+  color: rgba(24, 6, 6, 0.3);
+}
+
 /* STYLES FOR THE CARDS PLEASE DO NOT TOUCH*/
 /* Float four columns side by side */
 .column {
@@ -90,26 +129,6 @@ header.masthead .device-container .screen img {
   background-color: #e8dc42 !important;
 }
 
-.footer {
-  position: absolute;
-  width: 100%;
-  height: 60px;
-  line-height: 60px;
-  background-color: #e6d817;
-  margin-top: 50px;
-  padding: 25px 0;
-  text-align: center;
-  color: rgba(24, 6, 6, 0.3);
-}
-
-
-/* STYLES FOR THE CARDS PLEASE DO NOT TOUCH*/
-/* Float four columns side by side */
-.column {
-  float: right !important;
-  width: 5%;
-  padding: 0 10px;
-}
 
 /* Style the counter cards */
 .card {
