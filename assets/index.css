@@ -3,12 +3,15 @@
   width: 10%;
   height: 10%;
 }
-#mynav{
 
-}
 .navbar {
-  background-color: transparent !important;
+  
   background-repeat: no-repeat;
+  background-color: #e6d817 !important;
+  transition: all 0.35s;
+  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 200;
+  letter-spacing: 1px;
 }
 .dropdown-item:hoover {
   background-color: rgba(0,0,0,0.3);
@@ -26,18 +29,51 @@ justify-content: center
 
 };
 
+/*hero*/
+header.masthead {
+  position: relative;
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  color: white;
+  background: url('../assets/pictures/ella-olsson-KPDbRyFOTnE-unsplash.jpg') !important;
+}
+
+header.masthead .header-content {
+  max-width: 500px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+header.masthead .header-content h1 {
+  font-size: 30px;
+}
+
+header.masthead .device-container {
+  max-width: 325px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+header.masthead .device-container .screen img {
+  border-radius: 3px;
+}
+
 /* STYLES FOR TEMPLATE PLEASE DO NOT TOUCH*/
 .dropdown-menu {
   left: -97px;
 }
 
-footer {
+.footer {
   position: absolute;
   width: 100%;
   height: 60px;
   line-height: 60px;
-  background-color: #bae0e1;
+  background-color: #e6d817;
   margin-top: 50px;
+  padding: 25px 0;
+  text-align: center;
+  color: rgba(24, 6, 6, 0.3);
 }
 
 
@@ -55,7 +91,7 @@ footer {
   box-shadow: 0 4px 8px 0 rgba(204, 240, 203, 0.808);
   padding: 16px;
   text-align: center !important;
-  background-color: #bae0e1;
+  background-color: #e6d817;
   
 }
 
@@ -65,5 +101,5 @@ footer {
   justify-content: stretch !important;
   position: left !important;
   width: 90% !important;
-  background-color: #1cb7bd !important;
+  background-color: #e8dc42 !important;
 }
