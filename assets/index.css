@@ -63,6 +63,32 @@ header.masthead .device-container .screen img {
 .dropdown-menu {
   left: -97px;
 }
+/* STYLES FOR THE CARDS PLEASE DO NOT TOUCH*/
+/* Float four columns side by side */
+.column {
+  float: right !important;
+  width: 5%;
+  padding: 0 10px;
+}
+
+/* Style the counter cards */
+.card {
+  display: flex !important;
+  box-shadow: 0 4px 8px 0 rgba(204, 240, 203, 0.808);
+  padding: 16px;
+  text-align: center !important;
+  background-color: #e6d817;
+  
+}
+
+.card-row {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: stretch !important;
+  position: left !important;
+  width: 90% !important;
+  background-color: #e8dc42 !important;
+}
 
 .footer {
   position: absolute;
