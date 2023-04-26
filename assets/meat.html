@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Meat Recipes</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+        crossorigin="anonymous">
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"><link rel="stylesheet" href="assets/index.css">
+<link rel="stylesheet" href="assets/index.css">
+  <!-- Custom CSS -->
+  <style>
+    .card {
+      width: 18rem;
+      margin: 1rem;
+    }
+
+    #results {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img id="logo" src="assets/pictures/logo-no-background.png"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto" style="margin-left: 50%;">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Budget</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="recipes.html" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  Recipes
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="meat.html">Meat</a>
+                  <a class="dropdown-item" href="#">Fish</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Vegan</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">How to</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<br/>
+  <div class="container">
+    <h1>Meat Recipes</h1>
+    <div id="results"></div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+  <script src="assets/meat.js"></script>
+</body>
+</html>
