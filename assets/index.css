@@ -42,22 +42,25 @@ header.masthead {
   width: 100%;
   height: 500px;
   padding-top: 100px;
-  padding-bottom: 150px;
+  padding-bottom: 100px;
+  margin:auto;
   color: black;
   background: url('../assets/pictures/ella-olsson-KPDbRyFOTnE-unsplash.jpg');
-  background-size: 80%;
+  background-size: cover;
   background-repeat: no-repeat;
-  object-fit: stretch;
 }
 
 header.masthead .header-content {
   max-width: 500px;
   margin-bottom: 100px;
+  margin-top: auto;
+  padding-left: 50%;
   text-align: center;
 }
 
 header.masthead .header-content h1 {
   font-size: 30px;
+  font-weight: 500;
 }
 
 header.masthead .device-container {
@@ -72,8 +75,7 @@ header.masthead .device-container .screen img {
 
 #searchbar {
   position: relative;
-  width: 100%;
-  content: center;
+  width: 60%;
 }
 /* STYLES FOR TEMPLATE PLEASE DO NOT TOUCH*/
 .dropdown-menu {
