@@ -100,8 +100,11 @@ header.masthead .device-container .screen img {
   width: 5%;
   padding: 0 30;
   margin-right: 10px;
-  column-gap: 30px!important;
-}padding: 0 30;
+ column-gap: ;
+  padding: 0 30;
+  border-spacing: 20px;
+}
+
 
 /*.footerbox {
   background-color: #e6d817;
@@ -116,14 +119,24 @@ header.masthead .device-container .screen img {
   padding: 25px 0;
   text-align: center;
   color: rgba(24, 6, 6, 0.3);
+
 }
 
 /* STYLES FOR THE CARDS PLEASE DO NOT TOUCH*/
-/* Float four columns side by side */
+/* Float three columns side by side */
 .column {
   float: right !important;
   width: 5%;
   padding: 10 10px;
+  column-gap: 2.5em !important;
+  
+.body {
+    column-gap: 1em;
+    column-rule: thin solid black;
+    column-width: 20;
+    padding: 10 20px;
+
+  }
 }
 
 /* Style the counter cards */
@@ -133,7 +146,7 @@ header.masthead .device-container .screen img {
   padding: 50px;
   text-align: center !important;
   background-color: #bae0e1;
-  
+gap: ;
 }
 
 .card-row {
@@ -143,5 +156,8 @@ header.masthead .device-container .screen img {
   position: left !important;
   width: 90% !important;
   background-color: #1cb7bd !important;
-}
-
+  
+  /*footer card columns*/
+  
+-ms-grid-column-span: all;
+grid-column: span 2;
