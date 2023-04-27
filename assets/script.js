@@ -35,7 +35,7 @@ $("#search-btn").on("click", function (event) {
   console.log(searchInput);
   //
   var queryURL = "https://api.spoonacular.com/recipes/complexSearch?query=chicken&apiKey=946d18230eb44f9ea9732400786afe4c";
-  var secondURL = "https://api.api-ninjas.com/v1/cocktail?name=bloodymary&apiKey=FZMMbWy9I9dawa47q1xDIw==Ykf7afQ3ZjD3eS1k";
+  var cocktailURL = "the-cocktail-db.p.rapidapi.com?apiKey=52ba84ca8dmsh25283fe3edf5356p113f37jsn2a2c34c22856&s=vodka";
 
   //Make ajax request to recipe API
   $.ajax({
@@ -122,16 +122,42 @@ showRecipeCards(recipeData);
   }
 }*/
 
-var name = 'bloody mary'
-$.ajax({
-    method: 'GET',
-    url: 'https://api.api-ninjas.com/v1/cocktail?name=' + name,
-    headers: { 'X-Api-Key': 'YOUR_API_KEY'},
-    contentType: 'application/json',
-    success: function(result) {
-        console.log(result);
-    },
-    error: function ajaxError(jqXHR) {
-        console.error('Error: ', jqXHR.responseText);
-    }
+const settings = {
+	async: true,
+	crossDomain: true,
+	url: 'https://the-cocktail-db.p.rapidapi.com/search.php?s=vodka',
+	method: 'GET',
+	headers: {
+		'content-type': 'application/octet-stream',
+		'X-RapidAPI-Key': '52ba84ca8dmsh25283fe3edf5356p113f37jsn2a2c34c22856',
+		'X-RapidAPI-Host': 'the-cocktail-db.p.rapidapi.com'
+	}
+};
+
+$.ajax(settings).done(function (response) {
+	console.log(response);
 });
+
+  var cocktailList = response.results;
+  for (var i = 0; i < cocktailList.length; i++) {
+    console.log(cocktailList[i].title);
+    console.log(cocktailList[i].image);
+    var card = $(`
+<div class="row">
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">${cocktailList[i].title}</h5>
+    <img src="${cocktailList[i].image}" alt="..." width="200" height="200">
+    <p class="card-text">
+    </p>
+    <button>
+    <a href="the-cocktail-db.p.rapidapi.com/${cocktailList[i].id.summary}?apiKey=52ba84ca8dmsh25283fe3edf5356p113f37jsn2a2c34c22856&s=vodka">
+    <button />
+    </a>
+  </div>
+</div>
+</div>
+`)
+console.log(cocktailList[i].id)
+  $("#recipe-cards").append(card);
+  }
