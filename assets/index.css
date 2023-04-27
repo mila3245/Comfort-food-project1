@@ -129,6 +129,7 @@ header.masthead .device-container .screen img {
 .card-row {
   display: flex;
   flex-direction: row;
+
   position: left !important;
   width: 90% !important;
   background-color: #1cb7bd !important;
