@@ -15,33 +15,32 @@
 
 <body>
   <!--Navbar-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class= "container-fluid">
-    <a class="navbar-brand" href="#"><img id=logo src="assets/pictures/logo-no-background.png"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light customNav">
+    <a class="navbar-brand" href="#"><img id="logo" src="assets/pictures/logo-no-background.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbar">
-      <ul class="navbar-nav mr-auto" style="margin-left:50%;">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a> 
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#shoppingbasket">Shopping basket</a>
+        <li class="nav-item">
+          <a class="nav-link" href="#shoppingbasket">Shopping Basket</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
-            Recipes
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown"> 
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recipes</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="#meat">Meat</a>
-              <a class="dropdown-item" href="#fish">Fish</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#veg">Vegan</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#fish">Fish</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#veg">Vegan</a>
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#aboutus">About us</a>
+          <a class="nav-link" href="#aboutus">About us</a>  
         </li>
       </ul>
     </div>
@@ -80,10 +79,13 @@
     </div>
 
     <!--on the page cards-->
-    <div class="container" >
-      <div class="card-deck"></div> 
-      <div class="row">
-        <div id="meat" class="card" style="width: 18rem;">
+  <div class="container-fluid content">
+    <h2 class="sectionHeading">Sample recipes</h2>
+    <div class="row recipes">
+
+      <!-- Card 1 -->
+      <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+        <div class="card" id="meat">
           <img src="assets/pictures/meat1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Meat Recipe</h5>
@@ -92,7 +94,12 @@
             <a href="#" class="btn btn-primary">Meat recipe page</a>
           </div>
         </div>
-        <div id= "fish" class="card" style="width: 18rem;">
+      </div>
+      <!-- End card 1 -->
+
+      <!-- Card 2 -->
+      <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+        <div class="card" id="fish">
           <img src="assets/pictures/fish.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Fish Recipe</h5>
@@ -101,17 +108,23 @@
             <a href="#" class="btn btn-primary">Fish recipe page</a>
           </div>
         </div>
-        <div id="veg" class="card" style="width: 18rem;">
+      </div>
+      <!-- End card 2 -->
+
+      <!-- Card 3 -->
+      <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+        <div class="card" id="veg">
           <img src="assets/pictures/vegan2.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Vegan Recipe</h5>
             <p class="card-text">Sweet Simple Vegan is as lovely as its name suggests. Yes, It gives you all the nutrients your body needs.</p>
-            <a href="#" class="btn btn-primary">Vegan recipe page</a>
+            <a href="#" class="btn btn-primary">Vegan Recipe</a>
           </div>
         </div>
       </div>
+      <!-- End card 3 -->
     </div>
-  </section>
+  </div>
   <!-- section3 -->
   <section>
     <div class="row g-0 bg-light position-relative">
@@ -140,14 +153,12 @@
   <button></button>
 </section>
 <!--Footer-->
-   <div class="card ">
-    <img class="card-img-top" id="logo" src="assets/pictures/logo-no-background.png" alt="Card image cap">
-    <div class="card-body">
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-    </div>
-  </div>
-    </div>
-   
+    <footer>
+      <div class="container">
+        <img class="card-img-top" id="logo" src="assets/pictures/logo-no-background.png" alt="Card image cap">
+        <p>&copy; Your Website 2020. All Rights Reserved.</p>
+      </div>
+    </footer>
           <!-- Optional JavaScript -->
           <!-- jQuery first, then Popper.js, then Bootstrap JS -->
           <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
