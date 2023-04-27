@@ -2,6 +2,8 @@
 group work
 Project One:
 
+Project One:
+
 Team Members
 CuiRong Li
 Kamila Swiader
@@ -10,6 +12,7 @@ Uzoamaka Metu
 
 Your Project Links
 Code Repo URL
+https://github.com/mila3245/project-1-g6
 
 
 Deployed URL
@@ -48,6 +51,7 @@ Presentation Requirements
 ○	The technologies you used 
 ○	A demonstration of its functionality
 ○	Directions for future development
+
 Presentation Template 
 
 Your presentations are a reflection of the work that you have done as a team. We should have a clear understanding of what the application does, why it was built, and how it was built before we ever experienced your application demo.
@@ -86,7 +90,8 @@ Note:
 How will you be using Git?
 
 Git Commit #
-
+-As a team, we started with git/Vscode interface and commit to Github, after 2 days we realised that it is easy to make mistakes if you do not know the commands. We switched over to using the Github desktop and work started flowing well. 
+- stuck time 30mins sometimes, or more but github desktop simplified it for us.
 
 Stuck time ( How long until you consult a teammate?):
 ●	30 min? 
@@ -137,7 +142,6 @@ The playback format:
 ○	Show the progress you have made on your work.
 ○	Demo any finished work/features.
 We encourage you to set up time for playbacks at the end of each sprint. 
-
 Application Info:
 
 Project Title: 	The Comfort Food Concept 
@@ -147,23 +151,27 @@ Project Title: 	The Comfort Food Concept
 Project Description
 Before you start writing any code, your group should outline the scope and purpose of your project. This helps provide direction and prevent scope creep.
 
-Write this as a summary of your interests and intent, including:
+Write this as a brief summary of your interests and intent, including:
 ●	Problem / Motivation
 ●	How it addresses the problem
 ●	Possible source for such data
 Summary
-Dark kitchen and food deliveries have seen massive growth since 2020 because of the Covid19 pandemic. We have designed Comfort Food App to contribute to existing ways different people such as busy professionals and weight-conscious individuals can work out a good meal at lunchtime yet carry on with their daily tasks. The goal of Comfort Food is to unite and simplify the three steps of preparing delicious home-cooked meals: plan, shop and cook, into one intuitive process. In the meantime, it provides an atmosphere to encourage, inspire and elevate the next-gen home cooks.
+Dark kitchen and food deliveries have seen massive growth since 2020 because of the Covid19 pandemic. We have designed Comfort Food App to contribute to existing ways different people such as busy professionals, weight-conscious working class individuals and food lovers can work out a good meal at lunchtime, yet carry on with their daily tasks. The goal of Comfort Food is to unite and simplify the three steps of preparing delicious home-cooked meals: plan, shop and cook, into one intuitive process. This provides an atmosphere to encourage, inspire and elevate the next-gen home cooks.
 
 Role	Frontend UI/UX design
-Deliverables 	•	User research
-•	Wireframes
-•	Prototype
-•	Usability testing
-Tools	•	Pen & paper
+Tools	•	Pen and paper
 •	Figma
 •	Sketch
 •	HTML/CSS, JavaScript
 •	Git and GitHub
+•	Logo
+•	Google font link guide
+•	Colour Wheel
+•	Pinterest
+Deliverables 	•	User research
+•	Wireframes
+•	Prototype
+•	Usability testing
 
 Problem to solve. 
 •	People prefer to pick fresh produce from brick-and-mortar stores to ensure their quality.
@@ -178,37 +186,32 @@ The following assumptions on how the app could potentially help with the problem
 -Incentives are needed to encourage people to give feedback.
 •	Online shoppers like the option of free shipping above a certain cost.
 -If people plan out the number of groceries needed for the next several meals, they can save on delivery and reduce food waste at the same time.
-
 Research: 
-According to the research Evaluating Online Grocery Shopping Habits by International Food Information Council, Feb 2018:
-•	The biggest barriers to online grocery shopping are the cost of items/delivery, and the time it takes for groceries to be delivered.
-•	The top purchased grocery items are Snacks, cereals, and canned goods. While the least purchased items are Meat, seafood, dairy, eggs, and pre-made meals, indicating that the quality of perishable products is also a concern of online shoppers.
+The biggest barriers to online grocery shopping are the cost of items/delivery, and the time it takes for groceries to be delivered, therefore People prefer to buy snacks than any other food (International Food Information Council, 2018)
+
 User preferences
 •	It is faster than self-service in-store.
 •	It is easy to navigate the products categorized by type.
 •	Product information is easily identified in a set format.
-•	After getting used to the system, shopping online is much faster.
+•	Shopping online is much faster.
 What users do not like
 •	The built-in search function is difficult to use without a spelling check.
 •	The search bar only shows results for specific keywords, not similar or alternative suggestions.
 •	The process of adding an item to the trolley is hard to follow for beginners.
 •	Purchasing ingredients from different stores in one order is difficult.
-•	Pricing strategy: Free download to attract users. Upgrade to unlock more features for power users. But how to determine the free and paid features is a challenge to fulfil various user needs.
-•	The process of selecting alternatives within the same store.
+•	Pricing strategies were found to be free download to attract users; Upgrade to unlock more features for power user; however, how to determine the free and paid features is a challenge to fulfil various user needs.
 •	How to encourage purchase when the minimum expense for free shipping is not met.
-•	Helping customers in determining the number of goods.
-•	Delivery services vary between stores. How to help users quickly determine which store to use when shopping.
-
-Assumptions validated from the initial research.
-
-Our assumptions were validated because each of the points on user preferences listed above represents a potential group targeting the audience with different pain points. These include motivations and preferences in trying to save travelling and shopping time.
+Our Goals and Motivation 
 Goals
+
 •	Get inspiration for cooking.
 •	Know the number of servings from a recipe.
 •	Get cooking tips.
 •	Buy quality food ingredients.
 •	Find nutrition information on the product.
 •	Have a shopping list to use in-store.
+
+
 Motivation
 •	Find recipes for specific ingredients.
 •	Find recipes for a certain type of dishes.
@@ -216,6 +219,7 @@ Motivation
 •	Have a place to keep all the shopping lists.
 •	Buy quality groceries online from trusted stores.
 •	Reduce waste by cutting the temptation of buying extra.
+
 Planning: Design
 
 User Stories
@@ -224,30 +228,34 @@ As a <role>,	I want <feature>	so that <reason>. 	<What does does it inform>
 meat menu, Fish menu and vegan menu	HTML: Home
 
 JS: Info from third party/APIs
+automation
 2 As a weight-conscious working class	I want to view a list of low-fat recipes so I can stay healthy and maintain my weight.
 
 I want to see the calorie count for each recipe so I can make sure I am not going over my daily allowance.	Ability to filter items according to: 
 Low fat, Gluten-free, Nut-free and non-diary. 
 	HTML: select categories 
 
-JS:style
-3. As a food lover 	I want to be able to find my favourites and save recipes so I can have quick access to all my favourites in one location (regardless of category).	Favourites 	HTML: 
+JS:Nutrition API
+3. As a food lover 	I want to be able to find my favourites and save recipes so I can have quick access to all my favourites in one location (regardless of category).	Favourites 	HTML: search button
 
-JS:
-4As a busy web developer 	I want to know the approximate required to prepare each meal so I can allocate my time accordingly. 
-	Recipe : Main	HTML: 
+JS: Recipe API
+4As a busy web developer 
+	I want to know the approximate required preparing each meal so I can allocate my time accordingly. 
+	Recipe : Main	HTML: Time API
 
-JS:
-5. As an academic	I want to be able to add notes to each dish so I can add my thoughts, experiences or things I want to remember about cooking the dish	Recipe Notes 	HTML: 
+JS: conditional
+	I want to be able to add notes to each dish so I can add my thoughts, experiences or things I want to remember about cooking the dish	Recipe Notes 	HTML: form,
+feedback page
 
-JS:
+JS: contact automation
+
 
 WireFrame Images
  
 
-
 Features / Tasks
 Link to Github Projects Board
+•	https://github.com/mila3245/project-1-g6
 
 Planning: Technology
 
@@ -259,7 +267,12 @@ API #	API Base URL	Parameters	What is it?
 
 Screenshot or code Snippet of  APIs to be Used:
 
+
+
 Screenshot or code Snippet of  RESPONSE from APIs to be Used:
+
+
+
 
 Libraries to be Used:
 Library #	Doc Link	What does it do? 	How did you use it? 
@@ -280,14 +293,14 @@ Team Reflection:
 
 Issues 	What went well 	What did not go well 	What we did 	What can WE improve for next time
 
-Leadership	We adopted situational leadership		We all led at different times during the project depending on the problem we are facing as we all have diverse experiences, so we utilised it	
-Work-sharing 	Explored our different areas of strength		So we all chose different parts where we understood more to start with	
-Team working tools	We utilised all available collaborative software we know 		Microsoft teams (meeting), Trello, figma, the scrum approach, GitHub, Slack	
-Problems everyone encountered was shared		Committing to Github	Due to branch formation- we deleted folder after day 2 and started all over	Tiffany gave us a recorded video.
+Leadership	We adopted situational leadership	n/a	We all led at different times during the project depending on the problem we are facing as we all have diverse experiences, so we utilised it	We will first ask each other their areas of strength at the beginning of the meeting
+Work-sharing 	Explored our different areas of strength	n/a	So we all chose different parts where we understood more to start with	Continue to get better with every topic by studying after the lessons 
+Team working tools	We utilised all available collaborative software we know 	n/a	Microsoft teams (meeting), Trello, figma, the scrum approach, GitHub, Slack	Seek out more ways of doing things especially using new technologies
+Problems everyone encountered was shared	communication	Committing to Github	Due to branch formation- we deleted folder after day 2 and started all over	Tiffany gave us a recorded video
 -We found use of desktop GitHub most effective
-Technical Knowledge sharing 			More communication and use of tutorials, video clips 	
-				
-				
+Technical Knowledge sharing 	Shared similar issues on APIs.
+Not being expert in it	APIs	More communication and use of tutorials, video clips 	More lesson on use of APIs
+
 
 
 Team Member Feedback (directed at your team member(s)): 
@@ -304,14 +317,14 @@ Team Reflection & Team Member Feedback Google Doc Link
 Self Reflection: 
 
 ●	What Went Well
-●	What Did not go well?
-●	What can I improve for next time?
+●	What Did not go well
+●	What can I improve for next time
 
-Self reflection Link
-	What went well?	What Did not go well?	What went well?
-CuiRong Li			
-Kamila Swiader			
-Uzoamaka Metu			
+
+Self Reflection Link		
+CuiRong Li		
+Kamila Swiader		
+Uzoamaka Metu		
 
 
 
@@ -328,21 +341,6 @@ Team Member # 4
 Create a medium blog post about (350 Words)(Strongly Recommended)
 Potential Topics:  
 A new technology and how to use it (tutorial) A new concept that you discovered Implementation of team working practices 
-Notes/ References  
-
-Logo link: 
-https://app.logo.com/editor/slogan?editing_logo=logo_0a9863b5-dbc6-4c99-9623-6233a6f9bd5e&logo=logo_0a9863b5-dbc6-4c99-9623-6233a6f9bd5e
-
-Figma Link: 
-https://www.figma.com/file/MYkuvkszhrXHmaU6YVKjnb/Comfort-food-(Copy)?node-id=1-2&t=fOKTUcQtkOIHlZBO-0
-
-Google font link guide
-https://fonts.google.com/
-
-Colour Guide:
-https://www.dulux.co.uk/en/colour-details#tabId=item0
-
-
-
+Notes: 
 
 
